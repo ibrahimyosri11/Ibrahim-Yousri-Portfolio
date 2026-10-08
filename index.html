@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,28 +38,36 @@
 
 <body class="index-page">
 
-  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-    <div class="header-container d-flex flex-column align-items-start">
+      <a href="#hero" class="logo d-flex align-items-center">
+        <h1 class="sitename">Ibrahim<span>.Y</span></h1>
+      </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+          <li><a href="#skills"><i class="bi bi-lightning-charge navicon"></i><span>Skills</span></a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
         </ul>
       </nav>
 
-      <div class="social-links text-center">
-        <a href="https://github.com/ibrahimyosri11"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/ibrahim-yousri" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a></div>
-
+      <div class="header-actions d-flex align-items-center">
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://github.com/ibrahimyosri11" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/ibrahim-yousri" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <a href="assets/img/Ibrahim Yousri Ismail.pdf" download class="btn-resume d-none d-sm-inline-flex align-items-center">
+          <i class="bi bi-download me-1"></i> CV
+        </a>
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+      </div>
 
     </div>
-
   </header>
 
   <main class="main">
@@ -87,11 +95,6 @@
                   <a href="#portfolio" class="btn btn-primary">View My Work</a>
                   <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
-
-                <div class="social-links">
-                  <a href="https://github.com/ibrahimyosri11"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/ibrahim-yousri"><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
             </div>
 
@@ -99,7 +102,7 @@
               <div class="hero-visual">
                 <div class="profile-container">
                   <div class="profile-background"></div>
-                  <img src="assets/img/profile/Ibrahim(Profile).jpg" alt="Ibrahim Yousri" class="profile-image">
+                  <img src="assets/img/profile/photo_2026-10-08_15-07-39.jpg" alt="Ibrahim Yousri" class="profile-image">
                 </div>
               </div>
             </div>
@@ -119,12 +122,6 @@
           <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
             <div class="profile-card">
               <div class="profile-header">
-                <div class="profile-image">
-                  <img src="assets/img/profile/Ibrahim(Profile).jpg" alt="Profile Image" class="img-fluid">
-                </div>
-                <div class="profile-badge">
-                  <i class="bi bi-check-circle-fill"></i>
-                </div>
               </div>
 
               <div class="profile-content">
@@ -157,56 +154,22 @@
               </div>
 
               <div class="description">
-                <p>I believe that data has the power to solve real business problems. I'm a Business Information Systems student passionate about Data Engineering, Data Analytics, and Business Intelligence. Through continuous learning and hands-on projects, I'm building practical skills in Python, SQL, Power BI, and modern data tools. My goal is to create reliable data solutions that support smarter business decisions while continuously expanding my expertise in Data Engineering and deepening my understanding of business operations, especially Supply Chain Management.</p>
+                <p>II believe that data has the power to solve real business problems. I'm a Business Analyst passionate about Data Analytics, Data Engineering and Business Intelligence. Through continuous learning and hands-on projects, I'm building practical skills in Python, SQL, Power BI, and modern data tools. My goal is to create reliable data solutions that support smarter business decisions while continuously expanding my expertise in Data Engineering and deepening my understanding of business operations, especially Supply Chain Management.</p>
 
 
               <div class="stats-grid">
                 <div class="stat-item">
                   <div class="stat-number">3+</div>
-                  <div class="stat-label">Projects Completed</div>
+                  <div class="stat-label">Industries</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">100%</div>
-                  <div class="stat-label">Quality Focus</div>
+                  <div class="stat-number">7+</div>
+                  <div class="stat-label">Business Areas</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">5+</div>
-                  <div class="stat-label">Trainings Completed</div>
+                  <div class="stat-number">30+</div>
+                  <div class="stat-label">Business Insights Delivered</div>
                 </div>
-              </div>
-
-              <div class="details-grid">
-                <div class="detail-row">
-                  <div class="detail-item">
-                    <span class="detail-label">Specialization</span>
-                    <span class="detail-value">Business Intelligence &amp; Data Analytics</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Experience Level</span>
-                    <span class="detail-value">Junior</span>
-                  </div>
-                </div>
-                <div class="detail-row">
-                  <div class="detail-item">
-                    <span class="detail-label">Education</span>
-                    <span class="detail-value">BIS , Assiut University</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Languages</span>
-                    <span class="detail-value">Arabic , English</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="cta-section">
-               <a href="assets/img/Ibrahim Yousri Ismail.pdf" download class="btn btn-primary">
-                 <i class="bi bi-download"></i>
-                   Download Resume
-               </a>
-                <a href="#contact" class="btn btn-outline">
-                  <i class="bi bi-chat-dots"></i>
-                  Let's Talk
-                </a>
               </div>
             </div>
           </div>
@@ -223,90 +186,76 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Tools and technologies I use to transform data into actionable insights</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row">
+        <div class="row g-4">
+          <!-- Data Analysis Category -->
           <div class="col-lg-6">
             <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
-              <h3>Data analysis</h3>
-              <div class="skills-animation">
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>Excel</h4>
-                    <span class="skill-percentage">80%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Excel proficiency in data analysis, Pivot Tables, and reporting.</div>
+              <h3><i class="bi bi-bar-chart-fill me-2"></i>Data Analysis</h3>
+              <div class="skill-badges-grid">
+                <div class="skill-badge">
+                  <i class="bi bi-file-earmark-spreadsheet"></i>
+                  <span>Excel</span>
                 </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>Power Bi</h4>
-                    <span class="skill-percentage">90%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Strong proficiency in ES6+, DOM manipulation, and modern frameworks</div>
+                <div class="skill-badge">
+                  <i class="bi bi-bar-chart-steps"></i>
+                  <span>Power BI</span>
                 </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>Python</h4>
-                    <span class="skill-percentage">80%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
+                <div class="skill-badge">
+                  <i class="bi bi-code-slash"></i>
+                  <span>Python</span>
+                </div>
+                <div class="skill-badge">
+                  <i class="bi bi-database"></i>
+                  <span>SQL</span>
+                </div>
+                <div class="skill-badge">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <span>Statistics</span>
+                </div>
+                <div class="skill-badge">
+                  <i class="bi bi-layout-text-sidebar-reverse"></i>
+                  <span>Tableau</span>
                 </div>
               </div>
-            </div><!-- End Frontend Skills -->
+            </div><!-- End Data Analysis Skills -->
           </div>
 
+          <!-- Data Engineering Category -->
           <div class="col-lg-6">
             <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
-              <h3>Data Engineering</h3>
-              <div class="skills-animation">
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>.</h4>
-                    <span class="skill-percentage">75%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Server-side JavaScript development with Express and REST APIs</div>
+              <h3><i class="bi bi-cpu me-2"></i>Data Engineering</h3>
+              <div class="skill-badges-grid">
+                <div class="skill-badge">
+                  <i class="bi bi-code-slash"></i>
+                  <span>Python</span>
                 </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>Python</h4>
-                    <span class="skill-percentage">70%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Python development with Django and data analysis tools</div>
+                <div class="skill-badge">
+                  <i class="bi bi-database-fill"></i>
+                  <span>SQL</span>
                 </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>SQL</h4>
-                    <span class="skill-percentage">65%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Database design, optimization, and complex queries</div>
+                <div class="skill-badge">
+                  <i class="bi bi-arrow-left-right"></i>
+                  <span>ETL</span>
+                </div>
+                <div class="skill-badge">
+                  <i class="bi bi-cloud-arrow-up"></i>
+                  <span>Data Pipelines</span>
+                </div>
+                <div class="skill-badge">
+                  <i class="bi bi-server"></i>
+                  <span>Data Warehouse</span>
+                </div>
+                <div class="skill-badge">
+                  <i class="bi bi-diagram-3"></i>
+                  <span>Data Modeling</span>
                 </div>
               </div>
-            </div><!-- End Backend Skills -->
+            </div><!-- End Data Engineering Skills -->
           </div>
         </div>
 
@@ -314,130 +263,6 @@
 
     </section><!-- /Skills Section -->
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <!-- Left column with summary and contact -->
-          <div class="col-lg-4">
-            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
-  
-              <h3>Professional Summary</h3>
-              <p>Data Analyst | BIS Student with hands-on experience in Python, SQL, Power BI, DAX, and Power Query, using data 
-analysis and visualization to uncover patterns, identify business problems, and turn data into actionable insights. 
-Focused on helping businesses make better decisions, improve processes, and solve operational challenges 
-through data, with a long-term interest in applying these skills to Supply Chain and Production Operations.</p>
-
-              <h3 class="mt-4">Contact Information</h3>
-              <ul class="contact-info list-unstyled">
-                <li><i class="bi bi-envelope"></i> ibrahimyosri78@gmail.com</li>
-                <li><i class="bi bi-phone"></i> +20 (100) 768-5334</li>
-                <li><i class="bi bi-linkedin"></i> www.linkedin.com/in/ibrahim-yousri</li>
-              </ul>
-
-              <div class="skills-animation mt-4">
-                <h3>Services</h3>
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between">
-                    <span>Data Analysis</span>
-                  </div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between">
-                    <span>Power BI Dashboards</span>
-                  </div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between">
-                    <span>Excel Data Solutions</span>
-                  </div>
-                </div>
-
-                 <div class="skill-item">
-                  <div class="d-flex justify-content-between">
-                    <span>Data Cleaning & Preparation</span>
-                  </div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between">
-                    <span>Business Intelligence Reporting</span>
-                  </div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between">
-                    <span>Machine Learning (Basic)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right column with experience and education -->
-          <div class="col-lg-8 ps-4 ps-lg-5">
-            <!-- Experience Section -->
-            <div class="resume-section" data-aos="fade-up">
-              <h3><i class="bi bi-briefcase me-2"></i> Trainings</h3>
-
-              <div class="resume-item">
-                <h4>Advanced Data analysis</h4>
-                <h5>120 hours</h5>
-                <p class="company"><i class="bi bi-building"></i> National technology Institute (NTI).</p>
-                <ul>
-                  <li>Processed and analyzed 12+ real-world datasets using Excel, Power Query, Power BI, and Python.</li>
-                  <li>Completed 2 end-to-end Machine Learning projects in Python, covering data preprocessing, model development, and evaluation.</li>
-                  <li>Created interactive Power BI dashboards with DAX measures, calculated columns, and KPI visualizations.</li>
-
-                </ul>
-              </div>
-
-              <div class="resume-item">
-                <h4>Soft Skills Camp</h4>
-                <h5>Apr 5 – Apr 27, 2026</h5>
-                <p class="company"><i class="bi bi-building"></i> Ultimate Academy.</p>
-                <ul>
-                  <li>Led 4 different teams throughout the training, coordinating tasks and ensuring successful collaboration.</li>
-                  <li>Presented the final project to an audience of over 200 attendees, demonstrating confident public speaking and presentation skills.</li>
-                  <li>Guided my final project team to achieve 1st Place in the program's final competition.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Education Section -->
-            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
-              <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
-
-              <div class="resume-item">
-                <h4>Bachelor's Degree in Business Information System (BIS) </h4>
-                <h5>2024 – 2028 (Expected)</h5>
-                <p class="company"><i class="bi bi-building"></i> Faculty of Commerce, Assiut University</p>
-                <p> Current Overall Grade: Very Good</p>
-              </div>
-
-              <div class="resume-item">
-                <h4>Data Engineering & AI </h4>
-                <h5>2026 - 2027 (Expected)</h5>
-                <p class="company"><i class="bi bi-building"></i>Digital Egypt Pioneers Initiative (DEPI)</p>
-                <p>اكتب الخبرات </p>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -552,10 +377,6 @@ through data, with a long-term interest in applying these skills to Supply Chain
                 <p>
                   I help businesses unlock the power of their data throw analysis, visualization, and actionable insights to improve performance and achieve measurable results
                 </p>
-                <a href="services.html" class="service-btn">
-                  View All Services
-                  <i class="bi bi-arrow-right"></i>
-                </a>
               </div>
             </div>
           </div>
@@ -580,23 +401,19 @@ through data, with a long-term interest in applying these skills to Supply Chain
 I turn raw data into clear insights that uncover patterns, reveal problems, and support better decisions.
 Through analysis and visualization, I help businesses improve performance, solve challenges, and turn insights into measurable results.
               </p>
-            </div>
+           </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
                 <i class="bi bi-"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+              <a  class="card-action d-flex align-items-center justify-content-center rounded-circle">
                 <i class="bi bi-arrow-up-right"></i>
               </a>
-              <h3>
-                <a href="service-details.html">
-                  Coming <span>Soon</span>
-                </a>
-              </h3>
+              
               <p>
-                .
+                
               </p>
             </div>
           </div>
@@ -605,14 +422,10 @@ Through analysis and visualization, I help businesses improve performance, solve
               <div class="service-icon">
                 <i class="bi bi-"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+              <a  class="card-action d-flex align-items-center justify-content-center rounded-circle">
                 <i class="bi bi-arrow-up-right"></i>
               </a>
-              <h3>
-                <a href="service-details.html">
-                  Coming <span>Soon</span>
-                </a>
-              </h3>
+
               <p>
 
               </p>
@@ -635,114 +448,163 @@ Through analysis and visualization, I help businesses improve performance, solve
 
       <div class="container">
 
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-5">
-            <div class="info-box">
-              <h3>Contact Info</h3>
-              <p></p>
-
-               <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>+20 100 768 5334</p>
-                </div>
-              </div>
-
-               <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="content">
-                  <h4>Email Address</h4>
-                  <p>ibrahimyosri78@gmail.com</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-linkedin"></i>
-                </div>
-                <div class="content">
-                  <h4>linkedin</h4>
-                    <p><a href="https://www.linkedin.com/in/ibrahim-yousri" target="_blank">Ibrahim Yousri</a></p>                </div>
-              </div>
+        <div class="row g-4 g-lg-4 align-items-stretch">
+          
+          <!-- Direct Channels Column -->
+          <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-card">
               
-               <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-github"></i>
+              <div class="card-header-group">
+                <span class="card-badge"><i class="bi bi-chat-dots-fill"></i> Direct Channels</span>
+                <h3 class="card-title">Get In Touch</h3>
+                <p class="card-desc">Prefer a direct conversation? Feel free to reach out via phone, email, or my professional profiles.</p>
+              </div>
+
+              <div class="contact-items-list">
+                <!-- Phone & WhatsApp -->
+                <a href="https://wa.me/201007685334" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+                  <div class="item-icon">
+                    <i class="bi bi-whatsapp"></i>
+                  </div>
+                  <div class="item-details">
+                    <span class="item-label">Phone &amp; WhatsApp</span>
+                    <span class="item-value">+20 100 768 5334</span>
+                  </div>
+                  <div class="item-action">
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+                </a>
+
+                <!-- Email Address -->
+                <a href="mailto:ibrahimyosri78@gmail.com" class="contact-item-link">
+                  <div class="item-icon">
+                    <i class="bi bi-envelope-fill"></i>
+                  </div>
+                  <div class="item-details">
+                    <span class="item-label">Email Address</span>
+                    <span class="item-value">ibrahimyosri78@gmail.com</span>
+                  </div>
+                  <div class="item-action">
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/ibrahim-yousri" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+                  <div class="item-icon">
+                    <i class="bi bi-linkedin"></i>
+                  </div>
+                  <div class="item-details">
+                    <span class="item-label">LinkedIn</span>
+                    <span class="item-value">Ibrahim Yousri</span>
+                  </div>
+                  <div class="item-action">
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/ibrahimyosri11" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+                  <div class="item-icon">
+                    <i class="bi bi-github"></i>
+                  </div>
+                  <div class="item-details">
+                    <span class="item-label">GitHub</span>
+                    <span class="item-value">ibrahimyosri11</span>
+                  </div>
+                  <div class="item-action">
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+                </a>
+              </div>
+
+              <div class="contact-card-footer">
+                <div class="status-indicator">
+                  <span class="status-pulse"></span>
+                  <span>Available for projects &amp; consultations &bull; Assiut, EGY</span>
                 </div>
-                <div class="content">
-                  <h4>github</h4>
-                    <p><a href="https://github.com/ibrahimyosri11" target="_blank">Ibrahim Yousri</a></p>                </div>
               </div>
 
             </div>
           </div>
 
-<div class="col-lg-7">
-  <div class="contact-form">
-    <h3>Get In Touch</h3>
-    <p>Have a question or a project idea? I'd love to hear from you.</p>
+          <!-- Freelance Platforms Column -->
+          <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-card">
+              
+              <div class="card-header-group">
+                <span class="card-badge"><i class="bi bi-briefcase-fill"></i> Freelance Platforms</span>
+                <h3 class="card-title">Hire Me On</h3>
+                <p class="card-desc">Looking for escrow-secured contracts and milestone deliveries? You can hire me on top freelance platforms.</p>
+              </div>
 
-    <!-- زيادة الفواصل بين المنصات هنا بقت 35px بدل 20px -->
-    <div class="platforms-list" style="display: flex; flex-direction: column; gap: 35px; margin-top: 35px;">
-      
-      <!-- خمسات -->
-      <a href="رابط_خمسات_هنا" target="_blank" class="platform-item" style="display: flex; align-items: center; text-decoration: none; color: inherit; transition: opacity 0.3s;">
-        <div class="icon-circle" style="display: flex; align-items: center; justify-content: center; width: 60px !important; height: 60px !important; background-color: #e2dedb !important; border-radius: 50% !important; margin-right: 20px !important; flex-shrink: 0;">
-          <i class="bi bi-briefcase-fill" style="font-size: 1.5rem !important; color: #333 !important;"></i>
-        </div>
-        <div class="text-content">
-          <h4 style="margin: 0 0 5px 0 !important; font-size: 1.3rem !important; font-weight: 600 !important; color: #222 !important;">خمسات</h4>
-          <span style="margin: 0 !important; font-size: 1rem !important; color: #666 !important;">Ibrahim Yousri</span>
-        </div>
-      </a>
+              <div class="contact-items-list">
+                <!-- Mostaql -->
+                <a href="https://mostaql.com" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+                  <div class="item-icon">
+                    <i class="bi bi-person-workspace"></i>
+                  </div>
+                  <div class="item-details">
+                    <span class="item-label">Mostaql (مستقل)</span>
+                    <span class="item-value">Data &amp; Business Intelligence Projects</span>
+                  </div>
+                  <div class="item-action">
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+                </a>
 
-      <!-- مستقل -->
-      <a href="رابط_مستقل_هنا" target="_blank" class="platform-item" style="display: flex; align-items: center; text-decoration: none; color: inherit; transition: opacity 0.3s;">
-        <div class="icon-circle" style="display: flex; align-items: center; justify-content: center; width: 60px !important; height: 60px !important; background-color: #e2dedb !important; border-radius: 50% !important; margin-right: 20px !important; flex-shrink: 0;">
-          <i class="bi bi-person-workspace" style="font-size: 1.5rem !important; color: #333 !important;"></i>
-        </div>
-        <div class="text-content">
-          <h4 style="margin: 0 0 5px 0 !important; font-size: 1.3rem !important; font-weight: 600 !important; color: #222 !important;">مستقل</h4>
-          <span style="margin: 0 !important; font-size: 1rem !important; color: #666 !important;">Ibrahim Yousri</span>
-        </div>
-      </a>
+                <!-- Khamsat -->
+                <a href="https://khamsat.com" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+                  <div class="item-icon">
+                    <i class="bi bi-briefcase-fill"></i>
+                  </div>
+                  <div class="item-details">
+                    <span class="item-label">Khamsat (خمسات)</span>
+                    <span class="item-value">Data Analysis &amp; Dashboard Services</span>
+                  </div>
+                  <div class="item-action">
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+                </a>
 
-      <!-- أب وورك -->
-      <a href="رابط_اب_وورك_هنا" target="_blank" class="platform-item" style="display: flex; align-items: center; text-decoration: none; color: inherit; transition: opacity 0.3s;">
-        <div class="icon-circle" style="display: flex; align-items: center; justify-content: center; width: 60px !important; height: 60px !important; background-color: #e2dedb !important; border-radius: 50% !important; margin-right: 20px !important; flex-shrink: 0;">
-          <i class="bi bi-laptop" style="font-size: 1.5rem !important; color: #333 !important;"></i>
-        </div>
-        <div class="text-content">
-          <h4 style="margin: 0 0 5px 0 !important; font-size: 1.3rem !important; font-weight: 600 !important; color: #222 !important;">Upwork</h4>
-          <span style="margin: 0 !important; font-size: 1rem !important; color: #666 !important;">Ibrahim Yousri</span>
-        </div>
-      </a>
+                <!-- Upwork -->
+                <a href="https://www.upwork.com" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+                  <div class="item-icon">
+                    <i class="bi bi-laptop"></i>
+                  </div>
+                  <div class="item-details">
+                    <span class="item-label">Upwork</span>
+                    <span class="item-value">Global Freelance Contracts &amp; Analytics</span>
+                  </div>
+                  <div class="item-action">
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+                </a>
 
-      <!-- فريلانسر -->
-      <a href="رابط_فريلانسر_هنا" target="_blank" class="platform-item" style="display: flex; align-items: center; text-decoration: none; color: inherit; transition: opacity 0.3s;">
-        <div class="icon-circle" style="display: flex; align-items: center; justify-content: center; width: 60px !important; height: 60px !important; background-color: #e2dedb !important; border-radius: 50% !important; margin-right: 20px !important; flex-shrink: 0;">
-          <i class="bi bi-globe" style="font-size: 1.5rem !important; color: #333 !important;"></i>
-        </div>
-        <div class="text-content">
-          <h4 style="margin: 0 0 5px 0 !important; font-size: 1.3rem !important; font-weight: 600 !important; color: #222 !important;">Freelancer</h4>
-          <span style="margin: 0 !important; font-size: 1rem !important; color: #666 !important;">Ibrahim Yousri</span>
-        </div>
-      </a>
+                <!-- Freelancer -->
+                <a href="https://www.freelancer.com" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+                  <div class="item-icon">
+                    <i class="bi bi-globe"></i>
+                  </div>
+                  <div class="item-details">
+                    <span class="item-label">Freelancer</span>
+                    <span class="item-value">Fixed-Price &amp; Hourly Milestones</span>
+                  </div>
+                  <div class="item-action">
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+                </a>
+              </div>
 
-    </div>
-  </div>
-</div>
+              <div class="contact-card-footer">
+                <div class="status-indicator">
+                  <i class="bi bi-shield-check status-icon"></i>
+                  <span>100% Escrow Protection &amp; Guaranteed Milestones</span>
+                </div>
+              </div>
 
-<style>
-  .platform-item:hover {
-    opacity: 0.8;
-  }
-</style>
+            </div>
+          </div>
 
         </div>
 

@@ -38,48 +38,36 @@
 
 <body class="portfolio-details-page">
 
-  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-    <div class="header-container d-flex flex-column align-items-start">
+      <a href="index.html#hero" class="logo d-flex align-items-center">
+        <h1 class="sitename">Ibrahim<span>.Y</span></h1>
+      </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-          <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+          <li><a href="index.html#skills"><i class="bi bi-lightning-charge navicon"></i><span>Skills</span></a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+          <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
         </ul>
       </nav>
 
-      <div class="social-links text-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <div class="header-actions d-flex align-items-center">
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://github.com/ibrahimyosri11" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/ibrahim-yousri" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <a href="assets/img/Ibrahim Yousri Ismail.pdf" download class="btn-resume d-none d-sm-inline-flex align-items-center">
+          <i class="bi bi-download me-1"></i> CV
+        </a>
+        <i class="header-toggle d-xl-none bi bi-list"></i>
       </div>
 
     </div>
-
   </header>
 
   <main class="main">
@@ -162,42 +150,61 @@
                 Analyzed the dataset to identify hidden patterns and uncover the root cause behind the decline in **2023 sales**. By examining the relationship between marketing expenditure and sales performance, I found a strong positive correlation indicating that reduced marketing investment was a key factor contributing to the sales drop. Based on these findings, I recommended increasing and maintaining marketing investment over a longer period to improve campaign effectiveness, support sustainable sales growth, and enable more reliable performance evaluation.
               </p>
 
-              <div class="features mt-4">
-                <h3>Key Features</h3>
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-database-check"></i>
-                      <h4>Data Preparation</h4>
-                      <p>Cleaned, transformed, and validated the BMW dataset using Power Query to ensure accurate and reliable analysis.</p>
-                    </div>
+              <div class="features mt-5">
+                <h3 class="features-heading"><i class="bi bi-stars me-2"></i>Key Features</h3>
+                <div class="key-features-grid">
+
+                  <div class="key-feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="kf-icon"><i class="bi bi-database-check"></i></div>
+                    <h4>Data Preparation</h4>
+                    <p>Cleaned, transformed, and validated the BMW dataset using Power Query to ensure accurate and reliable analysis.</p>
                   </div>
 
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-graph-up"></i>
-                      <h4>Performance Analysis</h4>
-                      <p>Tracked sales, revenue, pricing, and marketing KPIs.</p>
-                    </div>
+                  <div class="key-feature-card" data-aos="fade-up" data-aos-delay="480">
+                    <div class="kf-icon"><i class="bi bi-graph-up"></i></div>
+                    <h4>Performance Analysis</h4>
+                    <p>Tracked sales, revenue, pricing, and marketing KPIs across all BMW models and regions.</p>
                   </div>
 
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-search"></i>
-                      <h4>Root Cause Analysis</h4>
-                      <p>Discovered that reduced marketing investment was strongly associated with the decline in 2023 sales.</p>
-                    </div>
+                  <div class="key-feature-card" data-aos="fade-up" data-aos-delay="560">
+                    <div class="kf-icon"><i class="bi bi-search"></i></div>
+                    <h4>Root Cause Analysis</h4>
+                    <p>Discovered that reduced marketing investment was strongly associated with the decline in 2023 sales.</p>
                   </div>
 
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-clipboard-check-fill"></i>
-                      <h4>Business Recommendations</h4>
-                      <p>Recommended maintaining a long-term marketing strategy and increasing marketing investment to support sustainable sales growth.</p>
-                    </div>
+                  <div class="key-feature-card" data-aos="fade-up" data-aos-delay="640">
+                    <div class="kf-icon"><i class="bi bi-clipboard-check-fill"></i></div>
+                    <h4>Business Recommendations</h4>
+                    <p>Recommended maintaining a long-term marketing strategy to support sustainable sales growth.</p>
                   </div>
+
+                  <div class="key-feature-card" data-aos="fade-up" data-aos-delay="720">
+                    <div class="kf-icon"><i class="bi bi-bar-chart-line"></i></div>
+                    <h4>Interactive Dashboard</h4>
+                    <p>Built an interactive Power BI dashboard with filters, slicers, and dynamic charts for flexible data exploration.</p>
+                  </div>
+
+                  <div class="key-feature-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="kf-icon"><i class="bi bi-lightning-charge"></i></div>
+                    <h4>DAX Measures</h4>
+                    <p>Developed optimized DAX measures and calculated columns to power all KPIs and business metrics.</p>
+                  </div>
+
+                  <div class="key-feature-card" data-aos="fade-up" data-aos-delay="880">
+                    <div class="kf-icon"><i class="bi bi-arrow-left-right"></i></div>
+                    <h4>Sales vs. Marketing</h4>
+                    <p>Visualized the strong positive correlation between marketing spend and revenue growth over time.</p>
+                  </div>
+
+                  <div class="key-feature-card" data-aos="fade-up" data-aos-delay="960">
+                    <div class="kf-icon"><i class="bi bi-eye"></i></div>
+                    <h4>Insight Storytelling</h4>
+                    <p>Transformed raw numbers into a clear narrative that communicates findings to both technical and business audiences.</p>
+                  </div>
+
                 </div>
               </div>
+
             </div>
           </div>
 
